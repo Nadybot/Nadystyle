@@ -1,0 +1,25 @@
+{
+  "name": "nadybot/nadystyle",
+  "description": "Code style configuration for all Nadybot PHP projects",
+  "authors": [
+    {
+      "name": "Nadyita",
+      "email": "nadyita@hodorraid.org",
+      "homepage": "https://nadybot.org",
+      "role": "Developer"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=8.1.17",
+    "composer-phar/php-cs-fixer": "^3.51.0",
+    "squizlabs/php_codesniffer": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nadystyle\\": "src",
+      "PHP_CodeSniffer\\Standards\\": "style"
+    }
+  },
+  "license": ["AGPL-3.0-or-later"]
+}
